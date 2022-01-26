@@ -9,6 +9,7 @@ namespace RestaurantManager.Infrastructure.Repositories
 {
     public class RestaurantRepository : IRestaurantRepository
     {
+        private readonly AppDbContext appDbContext;
         public Task AddAsync(Restaurant restaurant)
         {
             throw new NotImplementedException();
