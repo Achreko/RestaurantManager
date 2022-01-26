@@ -9,5 +9,7 @@
         public string Specialty { get; set; }
 
         public double Salary { get; set; }
+
+        public Restaurant Restaurant { get; set; }
     }
 }

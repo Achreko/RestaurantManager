@@ -15,10 +15,10 @@ namespace RestaurantManager.Core.Domains
 
         public double MonthlyRevenue { get; set; }
 
-        public Manager Managers { get; set; }
+        public Manager Manager { get; set; }
 
-        public List<Supplier> Suppliers { get; set; }
+        public City City { get; set; }
 
-        public MainChef MainChef { get; set; }
+        public ICollection<Supplier> Suppliers { get; set; }
     }
 }

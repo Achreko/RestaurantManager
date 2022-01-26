@@ -10,5 +10,7 @@
 
         public double Salary { get; set; }
 
+        public Restaurant Restaurant { get; set; }
+
     }
 }
