@@ -1,6 +1,5 @@
-﻿using System;
+﻿using RestaurantManager.Core.Domains;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace RestaurantManager.Core.Repositories

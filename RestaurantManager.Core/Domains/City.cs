@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RestaurantManager.Core
+﻿namespace RestaurantManager.Core.Domains
 {
     public class City
     {
