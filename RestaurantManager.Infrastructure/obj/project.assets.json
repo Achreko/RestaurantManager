@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\Restaurant_Manager.Infrastructure\\Restaurant_Manager.Infrastructure.csproj",
-      "projectName": "Restaurant_Manager.Infrastructure",
-      "projectPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\Restaurant_Manager.Infrastructure\\Restaurant_Manager.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\RestaurantManager.Infrastructure\\RestaurantManager.Infrastructure.csproj",
+      "projectName": "RestaurantManager.Infrastructure",
+      "projectPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\RestaurantManager.Infrastructure\\RestaurantManager.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\Restaurant_Manager.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\RestaurantManager.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",

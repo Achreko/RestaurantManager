@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\Restaurant_Manager.WebAPI\\Restaurant_Manager.WebAPI.csproj",
-      "projectName": "Restaurant_Manager.WebAPI",
-      "projectPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\Restaurant_Manager.WebAPI\\Restaurant_Manager.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\RestaurantManager.Core\\RestaurantManager.Core.csproj",
+      "projectName": "RestaurantManager.Core",
+      "projectPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\RestaurantManager.Core\\RestaurantManager.Core.csproj",
       "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\Restaurant_Manager.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\test\\Desktop\\Restaurant_Manager\\RestaurantManager.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,9 +57,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
