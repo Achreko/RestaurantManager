@@ -23,8 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="DTO\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
