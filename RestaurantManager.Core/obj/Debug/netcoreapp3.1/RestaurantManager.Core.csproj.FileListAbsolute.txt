@@ -1,0 +1,10 @@
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\bin\Debug\netcoreapp3.1\RestaurantManager.Core.deps.json
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\bin\Debug\netcoreapp3.1\RestaurantManager.Core.dll
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\bin\Debug\netcoreapp3.1\RestaurantManager.Core.pdb
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.csproj.AssemblyReference.cache
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.AssemblyInfoInputs.cache
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.AssemblyInfo.cs
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.dll
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Core\obj\Debug\netcoreapp3.1\RestaurantManager.Core.pdb
