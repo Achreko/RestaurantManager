@@ -2,9 +2,6 @@
 using RestaurantManager.Infrastructure.Commands;
 using RestaurantManager.Infrastructure.DTO;
 using RestaurantManager.Infrastructure.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace RestaurantManager.WebAPI.Controllers
