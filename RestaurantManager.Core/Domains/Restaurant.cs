@@ -17,9 +17,9 @@ namespace RestaurantManager.Core.Domains
 
         public string Country { get; set; }
 
-        public Manager Manager { get; set; }
-
         public City City { get; set; }
+
+        public Manager Manager { get; set; }
 
         public ICollection<Supplier> Suppliers { get; set; }
     }

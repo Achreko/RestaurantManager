@@ -10,6 +10,8 @@
 
         public double Salary { get; set; }
 
+        public int RestaurantId { get; set; }
+
         public Restaurant Restaurant { get; set; }
 
     }
