@@ -11,6 +11,7 @@ namespace RestaurantManager.Infrastructure.Commands
         public int NumberOfEmployees { get; set; }
 
         public DateTime DateOfOpening { get; set; }
-
+        
+        public string Country { get; set; }
     }
 }

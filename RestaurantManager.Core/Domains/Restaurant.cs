@@ -15,6 +15,8 @@ namespace RestaurantManager.Core.Domains
 
         public double MonthlyRevenue { get; set; }
 
+        public string Country { get; set; }
+
         public Manager Manager { get; set; }
 
         public City City { get; set; }

@@ -15,5 +15,7 @@ namespace RestaurantManager.Core.Repositories
         Task<Restaurant> GetAsync(int id);
 
         Task<IEnumerable<Restaurant>> BrowseAllAsync();
+
+        Task<IEnumerable<Restaurant>> BrowseAllFilter(string country);
     }
 }

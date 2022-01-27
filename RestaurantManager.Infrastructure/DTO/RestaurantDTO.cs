@@ -15,5 +15,7 @@ namespace RestaurantManager.Infrastructure.DTO
         public DateTime DateOfOpening { get; set; }
 
         public double MonthlyRevenue { get; set; }
+
+        public string Country { get; set; }
     }
 }

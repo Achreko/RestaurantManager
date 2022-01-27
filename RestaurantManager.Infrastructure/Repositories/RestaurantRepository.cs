@@ -36,6 +36,12 @@ namespace RestaurantManager.Infrastructure.Repositories
             return await Task.FromResult(appDbContext.Restaurants);
         }
 
+        public async Task<IEnumerable<Restaurant>> BrowseAllFilter(string country)
+        {
+            var z = appDbContext.Restaurants.Where(x => x.Country.Contains(country));
+            return await Task.FromResult(z);
+        }
+
         public async Task DelAsync(Restaurant restaurant)
         {
             try
