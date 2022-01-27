@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace RestaurantManager.Infrastructure.Services
 {
-    public class RestaurantServices : IRestaurantService
+    public class RestaurantService : IRestaurantService
     {
         private readonly IRestaurantRepository _restaurantRepository;
-        public RestaurantServices(IRestaurantRepository restaurantRepository)
+        public RestaurantService(IRestaurantRepository restaurantRepository)
         {
             _restaurantRepository = restaurantRepository;
         }

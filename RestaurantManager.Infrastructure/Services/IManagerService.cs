@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantManager.Infrastructure.Services
 {
-    public interface IManagerRepository
+    public interface IManagerService
     {
         public Task<IEnumerable<ManagerDTO>> BrowseAll();
         public Task<RestaurantDTO> GetRestaurant(int id);

@@ -8,3 +8,9 @@ C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\obj\De
 C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\obj\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\obj\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.dll
 C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\obj\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.pdb
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\bin\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.runtimeconfig.json
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\bin\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.runtimeconfig.dev.json
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\bin\Debug\netcoreapp3.1\RestaurantManager.Core.dll
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\bin\Debug\netcoreapp3.1\RestaurantManager.Core.pdb
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\obj\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.csproj.CopyComplete
+C:\Users\test\Desktop\Restaurant_Manager\RestaurantManager.Infrastructure\obj\Debug\netcoreapp3.1\RestaurantManager.Infrastructure.genruntimeconfig.cache
