@@ -2,6 +2,7 @@
 using RestaurantManager.Core.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,29 +11,75 @@ namespace RestaurantManager.Infrastructure.Repositories
     public class RestaurantRepository : IRestaurantRepository
     {
         private readonly AppDbContext appDbContext;
-        public Task AddAsync(Restaurant restaurant)
+
+        public RestaurantRepository(AppDbContext dbContext)
         {
-            throw new NotImplementedException();
+            appDbContext = dbContext;
         }
 
-        public Task<IEnumerable<Restaurant>> BrowseAllAsync()
+        public async Task AddAsync(Restaurant restaurant)
         {
-            throw new NotImplementedException();
+            try
+            {
+                appDbContext.Restaurants.Add(restaurant);
+                appDbContext.SaveChanges();
+                await Task.CompletedTask;
+            }
+            catch (Exception ex)
+            {
+                await Task.FromException(ex);
+            }
         }
 
-        public Task DelAsync(Restaurant restaurant)
+        public async Task<IEnumerable<Restaurant>> BrowseAllAsync()
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(appDbContext.Restaurants);
         }
 
-        public Task<Manager> GetAsync(int id)
+        public async Task DelAsync(Restaurant restaurant)
         {
-            throw new NotImplementedException();
+            try
+            {
+                appDbContext.Restaurants.Remove(appDbContext.Restaurants.FirstOrDefault(x => x.Id == restaurant.Id));
+                appDbContext.SaveChanges();
+                await Task.CompletedTask;
+            }
+            catch (Exception ex)
+            {
+                await Task.FromException(ex);
+            }
         }
 
-        public Task UpdateAsync(Restaurant restaurant)
+        public async Task<Restaurant> GetAsync(int id)
         {
-            throw new NotImplementedException();
+            Restaurant r = appDbContext.Restaurants.FirstOrDefault(x => x.Id == id);
+            return await Task.FromResult(r);
+        }
+
+        public async Task UpdateAsync(Restaurant restaurant)
+        {
+            try
+            {
+                var targetRestaurant = appDbContext.Restaurants.FirstOrDefault(x => x.Id == restaurant.Id);
+                if (restaurant.Name != null)
+                {
+                    targetRestaurant.Name = restaurant.Name;
+                }
+                if (restaurant.MonthlyRevenue != targetRestaurant.MonthlyRevenue)
+                {
+                    targetRestaurant.MonthlyRevenue = restaurant.MonthlyRevenue;
+                }
+                if (restaurant.NumberOfEmployees != targetRestaurant.NumberOfEmployees)
+                {
+                    targetRestaurant.NumberOfEmployees = restaurant.NumberOfEmployees;
+                }
+                appDbContext.SaveChanges();
+                await Task.CompletedTask;
+            }
+            catch (Exception ex)
+            {
+                await Task.FromException(ex);
+            }
         }
     }
 }

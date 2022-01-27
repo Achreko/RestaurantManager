@@ -12,7 +12,7 @@ namespace RestaurantManager.Core.Repositories
 
         Task DelAsync(Restaurant restaurant);
 
-        Task<Manager> GetAsync(int id);
+        Task<Restaurant> GetAsync(int id);
 
         Task<IEnumerable<Restaurant>> BrowseAllAsync();
     }

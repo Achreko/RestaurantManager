@@ -14,5 +14,8 @@ namespace RestaurantManager.Infrastructure.Repositories
 
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Manager> Managers { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<MainChef> MainChefs { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }
