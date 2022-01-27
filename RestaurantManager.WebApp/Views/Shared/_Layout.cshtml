@@ -1,9 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - RestaurantManager.WebApp</title>
+    <title>@ViewData["Title"] - RestaurantManager</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -24,6 +27,81 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Restaurant" asp-action="Index">Restaurant list</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Manager" asp-action="Index">Manager list</a>
+                        </li>
+                        @{
+                            if (User.IsInRole("Admin") || User.IsInRole("Premium"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Secret" asp-action="Index">*Materiały</a>
+
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-link text-dark">
+                                    <span style="color:darkgray">*Materiały</span>
+                                </li>
+                            }
+                        }
+
+                        @{
+                            if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="PanelAdministracyjny" asp-action="Index">**Panel administracyjny</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-link text-dark">
+                                    <span style="color:darkgray">**Panel administracyjny</span>
+                                </li>
+                            }
+                        }
+                        <li class="nav-item">
+
+                            @*<a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Zarejestruj się</a>*@
+
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Zarejestruj się</a>
+
+                        </li>
+
+
+
+                        @* Wylogowanie, Zalogowanie, Zalogowany user *@
+
+                        @if (SignInManager.IsSignedIn(User))
+
+                        {
+
+                            <li class="nav-link text-dark">
+
+
+                                @*<a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Witaj @User.Identity.Name</a>*@
+
+                                Hello @User.Identity.Name
+
+                            </li>
+
+                            <li class="nav-link text-dark">
+
+
+                                <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-right">
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">Wyloguj</a>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Zaloguj się</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
@@ -37,7 +115,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - RestaurantManager.WebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - RestaurantManager - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

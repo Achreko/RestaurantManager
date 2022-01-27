@@ -29,21 +29,20 @@ namespace RestaurantManager.WebAPI.Controllers
         }
 
         [HttpGet("filter")]
-        public async Task<IActionResult> GetSkiJumper(string country)
+        public async Task<IActionResult> GetRestaurant(string country)
         {
             var z = await _restaurantService.BrowseAllFilter(country);
             return Json(z);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddSkiJumper([FromBody] CreateRestaurant restaurant)
+        public async Task<IActionResult> AddRestaurant([FromBody] CreateRestaurant restaurant)
         {
             var s = new RestaurantDTO()
             {
                 Country = restaurant.Country,
                 Name = restaurant.Name,
-                NumberOfEmployees = restaurant.NumberOfEmployees,
-                DateOfOpening = restaurant.DateOfOpening
+                NumberOfEmployees = restaurant.NumberOfEmployees
             };
             await _restaurantService.AddRestaurant(s);
             return Json(s);
@@ -51,7 +50,7 @@ namespace RestaurantManager.WebAPI.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditSkiJumper([FromBody] UpdateRestaurant restaurant, int id)
+        public async Task<IActionResult> EditRestaurant([FromBody] UpdateRestaurant restaurant, int id)
         {
             var r = new RestaurantDTO()
             {
@@ -66,7 +65,7 @@ namespace RestaurantManager.WebAPI.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSkiJumper(int id)
+        public async Task<IActionResult> DeleteRestaurant(int id)
         {
             var z = new RestaurantDTO()
             {
